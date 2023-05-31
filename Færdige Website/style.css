@@ -1,0 +1,254 @@
+  body, html {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #ece4e4;
+    margin: 0;
+  }
+
+                                               /*header, logo, navigation*/
+  header {
+    background-color: #1d2780;
+  }
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #d7ec16;
+    text-decoration: underline;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white; 
+  }
+    
+  
+  nav ul {
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  nav li {
+    margin-left: 20px;
+    list-style: none;
+    z-index: 99;
+  }
+  
+  nav a {
+    font-size: 18px;
+  }
+ 
+  @media (max-width:810px) {
+    .logo { 
+      font-size: 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: white;
+    }
+
+    nav a {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      flex-direction: column;
+    }
+
+    nav li {
+      margin-bottom: 20px;
+    }
+  }
+                                                           /*intro-sektion*/
+
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 50px;
+
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 50px;
+   }
+ 
+ .velkommen {
+  font-size: 25px;
+ }
+
+ .intro-sektion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    padding: 50px;
+    margin-bottom: 40px;
+  }
+  
+  .intro-container {
+    max-width: 600px;
+  }
+  
+  .profilbillede {
+    width: 400px;
+    margin: 0 200px 20px 0;
+  }
+
+  .introtekst {
+    font-size: 18px;
+  }
+
+
+  @media (max-width: 810px) {
+    .intro-sektion {
+      flex-direction: column;
+      margin-bottom: 335px;
+    }
+    
+    .profilbillede {
+      order: -1;
+      margin-right: 0;
+      margin-top: 250px;
+    }
+
+  }
+
+
+  .line {
+    border-top: 2px solid black;
+    width: 60%;
+    margin: 15px 0 0 20%;
+  }
+                               /*Portfolio*/
+              
+ .portfolio-sektion {
+    padding: 10px;
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+    grid-gap: 30px;
+  }
+  
+  .portfolio-item img {
+    max-width: 70%;
+    border-radius: 40px;
+    margin-left: 15%;
+  }
+  
+  .overskrift {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .portfolio-tekst {
+    padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .portfolio-item:hover .portfolio-tekst {
+    opacity: 1;
+  }
+  
+       
+  @media (max-width:810px) {
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(6,auto);
+      grid-gap: 30px;
+     }
+    
+   .portfolio-tekst {
+    opacity: 1;
+   }  
+  }
+  
+                                      /*Om mig*/
+  .ommig-sektion {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+  }
+  
+  .ommig-container {
+    display: flex;
+    max-width: 1200px;
+  }
+  
+  .ommigtekst {
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+
+  .ommigbillede {
+    max-width: 400px;
+    margin-left: 20px;
+    border-radius: 50%;
+  }
+
+  @media (max-width: 1150px) {
+    .ommig-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .ommigbillede {
+      margin: 20px 0 0 0;
+    }
+  }
+
+  @media (max-width: 415px) {
+    .ommigtekst {
+      max-width: 300px;
+    }
+  }
+
+                                 /*kontakt mig*/
+  .kontakt-sektion {
+    padding: 20px;
+    text-align: center;
+   }
+  
+  .kontakt-sektion ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .kontakt-sektion li {
+    margin-bottom: 20px;
+  }
+                              /*footer*/
+  
+ footer {
+    background-color: #1d2780;
+  }
+
+  .footer-container {
+    padding: 20px;
+  }
+
+  .footertekst {
+    color: white;
+    text-align: right;
+  }
+  
